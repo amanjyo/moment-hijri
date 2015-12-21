@@ -461,7 +461,7 @@
 
 	function makeDateFromStringAndFormat(config) {
 		var tokens = config._f.match(formattingTokens),
-			string = config._i,
+			string = config._i+"",
 			len = tokens.length,
 			i, token, parsedInput
 
@@ -514,7 +514,7 @@
 	}
 	
 	function removeParsedTokens(config) {
-		var string = config._i,
+		var string = config._i +"",
 			input = '',
 			format = '',
 			array = config._f.match(formattingTokens),
